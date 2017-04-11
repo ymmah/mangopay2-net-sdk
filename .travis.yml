@@ -13,6 +13,6 @@ deploy:
   provider: script
   script: ls && tree && nuget push mangopay2-sdk.*.nupkg -ApiKey $NUGET_API_KEY
   on:
-    branch: release
+    branch: travis-ci-integration
 
 
