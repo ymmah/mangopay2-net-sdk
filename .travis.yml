@@ -14,5 +14,3 @@ deploy:
   script: ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/' && nuget push mangopay2-sdk.*.nupkg -ApiKey $NUGET_API_KEY
   on:
     branch: travis-ci-integration
-
-
