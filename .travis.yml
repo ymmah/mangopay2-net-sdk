@@ -5,7 +5,7 @@ install:
   - nuget install NUnit.Runners -OutputDirectory testrunner
 script:
   - xbuild mangopay2-net-sdk.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
-  - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./MangoPay.SDk.Tests/bin/Release/MangoPay.SDK.Tests.dll
+  # - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./MangoPay.SDk.Tests/bin/Release/MangoPay.SDK.Tests.dll
 deploy:
   skip_cleanup: true
   provider: script
