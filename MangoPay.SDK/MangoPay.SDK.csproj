@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\ApiEndPoint.cs" />
     <Compile Include="Core\APIs\ApiBase.cs" />
     <Compile Include="Core\APIs\ApiCardPreauthorizations.cs" />
     <Compile Include="Core\APIs\ApiCardRegistrations.cs" />
@@ -168,6 +169,7 @@
     <Compile Include="Entities\GET\BankingAliasDTO.cs" />
     <Compile Include="Entities\GET\DebitedBankAccountDTO.cs" />
     <Compile Include="Entities\GET\DisputeDTO.cs" />
+    <Compile Include="Entities\GET\DocumentConsultationDTO.cs" />
     <Compile Include="Entities\GET\DocumentDTO.cs" />
     <Compile Include="Entities\GET\DisputeDocumentDTO.cs" />
     <Compile Include="Entities\GET\DisputePageDTO.cs" />
@@ -276,6 +278,7 @@
     <Compile Include="Entities\PUT\UserNaturalPutDTO.cs" />
     <Compile Include="Entities\PUT\WalletPutDTO.cs" />
     <Compile Include="Entities\Scopes.cs" />
+    <Compile Include="Entities\ShippingAddress.cs" />
     <Compile Include="Entities\Transport\FilterReportsTransport.cs" />
     <Compile Include="Entities\Transport\ReportRequestTransportDTO.cs" />
     <Compile Include="Entities\Transport\ReportRequestTransportPostDTO.cs" />
